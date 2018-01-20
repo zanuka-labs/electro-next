@@ -2,7 +2,7 @@
 future site build for [zanuka.nz](http://zanuka.nz) :: electron + next.js + micro + now + other explorations... 
 
 ### intent
-This will be the public build of zanuka.nz production site. It's been too long since I actually had a website live for Zanuka, so it's about time to create something new. I've really enjoyed what the [ZEIT](https://github.com/zeit) team has been creating over the past year and Leo Lamprecht's post, [Building Electron Apps with Next.js](https://leo.im/2017/electron-next) has inspired me to explore this combination. My primary goal for zanuka.nz is to create something that can evolve and stay fresh with the latest tech. This may include blog posts, tech experiments, reviews, portfolio work and rapid prototypes. That's the idea anyway... 
+This will be the public build of zanuka.nz production site. It's been too long since I actually had a website live for Zanuka, so it's about time to create something new. I've really enjoyed what the [ZEIT](https://github.com/zeit) team has been creating over the past year and Leo Lamprecht's post, [Building Electron Apps with Next.js](https://leo.im/2017/electron-next) has inspired me to explore this combination. My primary goal for zanuka.nz is to create something that can evolve and stay fresh with the latest tech. This may include blog posts, tech experiments, reviews, portfolio work and rapid prototypes.
 
 ### design
 The primary focus will be on a clean UI with lots of room for expansion. I plan on investing time designing something relatively awesome and testing my hand at new visual effects, animations, and components that make for a better user experience and inspire others to put time into creating their own spin on UI. 
