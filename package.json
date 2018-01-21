@@ -2,9 +2,9 @@
   "name": "zanuka-desktop",
   "version": "0.0.1",
   "description": "zanuka desktop app experiment",
-  "main": "main.js",
+"main": "main/index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron main"
   },
   "repository": "https://github.com/zanuka/zanuka-desktop",
   "keywords": [

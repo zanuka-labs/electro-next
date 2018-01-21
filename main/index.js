@@ -1,4 +1,5 @@
 const electron = require('electron')
+const prepareNext = require('electron-next')
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -17,7 +18,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, './main/static/index.html'),
     protocol: 'file:',
     slashes: true
   }))
@@ -37,7 +38,14 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+// basic approach is app.on('ready', createWindow)
+
+// using async/await we can ensure that the main process
+// will handle the new renderer code BEFORE creting the window
+app.on('ready', async () => {
+  await prepareNext('./renderer')
+  createWindow()
+})
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
