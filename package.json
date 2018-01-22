@@ -2,9 +2,18 @@
   "name": "zanuka-desktop",
   "version": "0.0.1",
   "description": "zanuka desktop app experiment",
-"main": "main/index.js",
+  "main": "main/index.js",
   "scripts": {
-    "start": "electron main"
+    "start": "electron main", 
+    "build": "next build renderer && next export renderer",
+    "dist": "npm run build && build"
+  },
+  "build": {
+    "files": [
+      "**/*",
+      "!renderer",
+      "renderer/out"
+    ]
   },
   "repository": "https://github.com/zanuka/zanuka-desktop",
   "keywords": [
@@ -17,8 +26,9 @@
   "author": "mdelucchi",
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.7.8",
-    "next": "^4.0.0-beta.6",
+    "electron": "^1.7.10",
+    "electron-builder": "^19.54.0",
+    "next": "^4.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },

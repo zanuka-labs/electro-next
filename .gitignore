@@ -1,9 +1,18 @@
+# Mac stuff
 .DS_Store
+
+# NPM
 npm-debug.log
+package-lock.json
+
+# Dependency directories
 node_modules
+
+# Logs
 logs
 *.log
-coverage
+
+# Build :: Output
+renderer/out
+renderer/.next
 dist
-lib
-build
