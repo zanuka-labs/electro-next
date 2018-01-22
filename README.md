@@ -1,6 +1,8 @@
 ## zanuka-desktop
 [![Known Vulnerabilities](https://snyk.io/test/github/zanuka/zanuka-desktop/badge.svg?targetFile=package.json)](https://snyk.io/test/github/zanuka/zanuka-desktop?targetFile=package.json)
 
+![](./img/desktop.jpg)
+
 desktop app experiment :: electron + next.js + now
 
 ### intent
@@ -28,24 +30,4 @@ The primary goal for zanuka-desktop is to explore the Electron + Next.js stack c
 
 ### deployment
 I'll be using [Now Desktop](https://zeit.co/download) and the [Now CLI](https://zeit.co/download#now-cli) to deploy.
-
-**License (MIT)**
-
-```    
-    ~@ < MIT  
-  _`\<,_  
- (*)/ (*)  
-```
-Copyright (c) 2018-present Zanuka Labs, Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[mdelucchi]: https://github.com/mdelucchi
-[zanuka]: https://github.com/zanuka
-
-
 
