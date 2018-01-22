@@ -3,73 +3,41 @@ const isDev = require('electron-is-dev')
 const prepareNext = require('electron-next')
 const path = require('path')
 
-// Module to control application life.
 const app = electron.app
-// Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
-
-// const url = require('url')
 
 const devPath = 'http://localhost:8000/start'
 const prodPath = path.resolve('renderer/out/start/index.html')
 const entry = isDev ?  devPath : 'file://' + prodPath
 
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
 function createWindow () {
-  // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
-
-  // and load the index.html of the app.
-  // mainWindow.loadURL(url.format({
-  //   pathname: path.join(__dirname, './main/static/index.html'),
-  //   protocol: 'file:',
-  //   slashes: true
-  // }))
   mainWindow.loadURL(entry)
 
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  if (isDev) {
+    mainWindow.webContents.openDevTools()
+  }
 
-  // Emitted when the window is closed.
   mainWindow.on('closed', function () {
-    // Dereference the window object, usually you would store windows
-    // in an array if your app supports multi windows, this is the time
-    // when you should delete the corresponding element.
     mainWindow = null
   })
 }
 
-// This method will be called when Electron has finished
-// initialization and is ready to create browser windows.
-// Some APIs can only be used after this event occurs.
-// basic approach is app.on('ready', createWindow)
-
-// using async/await we can ensure that the main process
-// will handle the new renderer code BEFORE creting the window
 app.on('ready', async () => {
   await prepareNext('./renderer')
   createWindow()
 })
 
-// Quit when all windows are closed.
 app.on('window-all-closed', function () {
-  // On OS X it is common for applications and their menu bar
-  // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {
     app.quit()
   }
 })
 
 app.on('activate', function () {
-  // On OS X it's common to re-create a window in the app when the
-  // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) {
     createWindow()
   }
 })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
