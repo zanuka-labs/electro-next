@@ -1,4 +1,4 @@
-## zanuka-desktop
+## desktop-schmesktop
 [![Known Vulnerabilities](https://snyk.io/test/github/zanuka/zanuka-desktop/badge.svg?targetFile=package.json)](https://snyk.io/test/github/zanuka/zanuka-desktop?targetFile=package.json)
 
 ![](./img/desktop.jpg)
