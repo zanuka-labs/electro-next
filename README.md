@@ -1,9 +1,9 @@
-## desktop-schmesktop
+## electro-next
 [![Known Vulnerabilities](https://snyk.io/test/github/zanuka/zanuka-desktop/badge.svg?targetFile=package.json)](https://snyk.io/test/github/zanuka/zanuka-desktop?targetFile=package.json)
 
 ![](./img/desktop.jpg)
 
-desktop app experiment :: electron + next.js + now
+desktop app exploration :: electron + next.js + now
 
 ### intent
 The primary goal for zanuka-desktop is to explore the Electron + Next.js stack combo. 
