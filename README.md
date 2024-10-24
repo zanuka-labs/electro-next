@@ -8,6 +8,9 @@ desktop app exploration :: electron + next.js + now
 ### intent
 The primary goal for zanuka-desktop is to explore the Electron + Next.js stack combo. 
 
+### todo 
+- bring this idea back into 2024 context
+
 ### role of Next.js
 - build out the renderer for the Electron app
 - routing and prefetching of pre-defined pages
